@@ -1,13 +1,13 @@
 # 🕒 STM32 Digital Clock using MCP7940M RTC and 16x2 LCD
 
-## 📘 Overview
+##  Overview
 This project is a **Digital Clock System** built using an **STM32F030C8T6 microcontroller**, **MCP7940M RTC module**, and a **16x2 LCD display**. The RTC maintains accurate date and time using I2C communication, while the LCD displays the current **hour, minute, second, date, month, year, and weekday** in real-time.
 
 A **4x4 keypad** is used for user input to modify or verify time and date settings.
 
 ---
 
-## ⚙️ Hardware Components
+##  Hardware Components
 | Component | Description |
 |------------|-------------|
 | **STM32F030C8T6** | 32-bit ARM Cortex-M0 microcontroller |
@@ -19,7 +19,7 @@ A **4x4 keypad** is used for user input to modify or verify time and date settin
 
 ---
 
-## 🧩 Functional Features
+##  Functional Features
 - Displays real-time **hour, minute, second** on LCD.
 - Shows **date, month, year, and weekday**.
 - Converts between **BCD and decimal** formats for RTC communication.
@@ -30,7 +30,7 @@ A **4x4 keypad** is used for user input to modify or verify time and date settin
 
 ---
 
-## 💻 Software Details
+##  Software Details
 - **IDE:** STM32CubeIDE  
 - **Language:** C (using HAL library)  
 - **RTC Communication:** I2C protocol  
@@ -39,7 +39,7 @@ A **4x4 keypad** is used for user input to modify or verify time and date settin
 
 ---
 
-## 🧠 Core Functional Blocks
+##  Core Functional Blocks
 1. **LCD Driver Functions**
    - `LCD_Send_Command()`, `LCD_Print_Data()`, `LCD_Init()`
    - Responsible for sending commands and data to the LCD in 8-bit mode.
@@ -62,7 +62,7 @@ A **4x4 keypad** is used for user input to modify or verify time and date settin
 
 ---
 
-## 🧪 Example LCD Output
+##  Example LCD Output
 ```
 TIME: 10:42:56 AM
 DATE: 12:11:25  WED
@@ -70,7 +70,7 @@ DATE: 12:11:25  WED
 
 ---
 
-## 📦 Repository Structure
+##  Repository Structure
 ```
 /Core
  ├── Inc
@@ -84,21 +84,21 @@ README.md
 
 ---
 
-## 🔌 Circuit Overview
+##  Circuit Overview
 - LCD connected to STM32 GPIO pins (8-bit data mode + RS/RW/EN).
 - MCP7940M connected via I2C (SDA, SCL).
 - Keypad connected using GPIO pins for row-column scanning.
 
 ---
 
-## 🧰 Future Improvements
+## Future Improvements
 - Add user setting mode via keypad (time/date editing).
 - Implement alarm or stopwatch feature.
 - Add UART output for serial monitoring.
 
 ---
 
-## 📚 References
+## References
 - [MCP7940M Datasheet (Microchip)](https://ww1.microchip.com/downloads/en/DeviceDoc/20005010F.pdf)
 - [STM32F0 Reference Manual](https://www.st.com/resource/en/reference_manual/dm00091010.pdf)
 - STM32 HAL Library Documentation
