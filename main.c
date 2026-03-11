@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#define MCP7940M_ADDRESS		(0x6f<<1)
+#define MCP7940M_ADDRESS		(0x6f<<1)   ///0x6f 7bit slave address ,1bit=Read 
 void LCD_Send_8bit(uint8_t data)
 {
     // D0
@@ -865,3 +865,4 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
+
